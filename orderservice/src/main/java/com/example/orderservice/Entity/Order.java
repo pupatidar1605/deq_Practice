@@ -20,5 +20,6 @@ public class Order {
 
     private String product;
     private Double price;
+    @Column(name = "user_id")
     private Long userId;
 }

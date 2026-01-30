@@ -28,6 +28,8 @@ public class OrderService {
     }
 
     public List<Order> getOrdersByUserId(Long userId) {
-        return repository.findByUserId(userId);
+        List<Order> orders = repository.findByUserId(userId);
+        System.out.println("UserId: " + userId + ", Orders found: " + orders.size());
+        return orders;
     }
 }

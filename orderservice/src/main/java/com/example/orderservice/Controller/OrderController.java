@@ -31,7 +31,7 @@ public class OrderController {
         return service.getOrderById(id);
     }
 
-    @GetMapping("/orders")
+    @GetMapping()
     public List<Order> getAllOrders(@RequestParam(required = false) Long userId) {
         if (userId != null) {
             return service.getOrdersByUserId(userId);
