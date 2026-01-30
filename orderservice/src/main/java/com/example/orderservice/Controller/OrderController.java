@@ -30,4 +30,12 @@ public class OrderController {
     public Order getOrderById(@PathVariable Long id) {
         return service.getOrderById(id);
     }
+
+    @GetMapping("/orders")
+    public List<Order> getAllOrders(@RequestParam(required = false) Long userId) {
+        if (userId != null) {
+            return service.getOrdersByUserId(userId);
+        }
+        return service.getAllOrders();
+    }
 }

@@ -40,6 +40,8 @@ services:
     depends_on:
       user-db:
         condition: service_healthy
+      order-service:
+        condition: service_healthy
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://user-db:3306/users?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
       SPRING_DATASOURCE_USERNAME: root
