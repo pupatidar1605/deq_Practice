@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    List<Order> findByUserId(Long userId);
-}
+public interface UserRepository extends JpaRepository<User, Long> {}
+

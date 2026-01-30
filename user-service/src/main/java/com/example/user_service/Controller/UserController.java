@@ -42,7 +42,6 @@ public class UserController {
                 "http://order-service:9091/orders?userId=" + id,
                 Order[].class
         );
-        return Arrays.asList(orders);
+        return orders != null ? Arrays.asList(orders) : List.of();
     }
-
 }
