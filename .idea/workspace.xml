@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18683386-a95d-49c4-8401-b1139ec04e4f" name="Changes" comment="fix config for multiple service">
+      <change afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Service/OrderEventPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/user_service/Service/UserEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/src/main/java/com/example/orderservice/Service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orderservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/user_service/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/user_service/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="38xynPGDKzoxpfLoI7ESMn1uws6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

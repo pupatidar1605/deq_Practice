@@ -1,6 +1,7 @@
 package com.example.orderservice.Controller;
 
 import com.example.orderservice.Entity.Order;
+import com.example.orderservice.Service.OrderEventPublisher;
 import com.example.orderservice.Service.OrderService;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,17 +12,24 @@ import java.util.List;
 public class OrderController {
 
     private final OrderService service;
+    private final OrderEventPublisher publisher;
 
-    public OrderController(OrderService service) {
+    public OrderController(OrderService service, OrderEventPublisher publisher) {
         this.service = service;
+        this.publisher = publisher;
     }
 
     @PostMapping
     public Order createOrder(@RequestBody Order order) {
-        return service.createOrder(order);
+        Order saved = service.createOrder(order);
+        if(order.getId()%2==0)
+        {
+            publisher.publishOrderCreatedEvent(saved);
+        }
+        return saved;
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public List<Order> getAllOrders() {
         return service.getAllOrders();
     }
